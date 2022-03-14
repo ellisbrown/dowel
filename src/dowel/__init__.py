@@ -2,6 +2,7 @@
 
 This module instantiates a global logger singleton.
 """
+from dowel.colored_output import ColoredStdOutput
 from dowel.histogram import Histogram
 from dowel.logger import Logger, LoggerWarning, LogOutput
 from dowel.simple_outputs import StdOutput, TextOutput
@@ -17,6 +18,7 @@ __all__ = [
     'Logger',
     'CsvOutput',
     'StdOutput',
+    'ColoredStdOutput',
     'TextOutput',
     'LogOutput',
     'LoggerWarning',

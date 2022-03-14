@@ -5,12 +5,14 @@ from setuptools import setup
 # Required dependencies
 required = [
     # Please keep alphabetized
+    'colorama',
     'matplotlib',
     'numpy',
     'python-dateutil',
     'scipy',
     'tabulate',
     'tensorboardX',
+    'termcolor',
 ]
 
 extras = dict()
