@@ -27,7 +27,7 @@ class WandbOutput(LogOutput):
             data: The data to be logged by the output.
             prefix(str): Not used.
         """
-        if isinstance(data, TabularInput):  # todo: what is the type of data?
+        if isinstance(data, TabularInput):
             self._waiting_for_dump.append(
                 functools.partial(self._record_tabular, data))
         else:
@@ -36,7 +36,7 @@ class WandbOutput(LogOutput):
     def _record_tabular(self, data, step):
         for key, value in data.as_dict.items():
             self._record_kv(key, value, step)
-            data.mark(key)  # todo: what is mark?
+            data.mark(key)
 
     def _record_kv(self, key, value, step):
         if isinstance(value, np.ScalarType):
