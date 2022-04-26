@@ -2,8 +2,8 @@
 import csv
 import os
 
-from dowel import TabularInput
 from dowel.simple_outputs import FileOutput
+from dowel.tabular_input import TabularInput
 
 
 class CsvOutput(FileOutput):

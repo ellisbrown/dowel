@@ -9,7 +9,7 @@ import sys
 
 import dateutil.tz
 
-from dowel import LogOutput
+from dowel.logger import LogOutput
 from dowel.tabular_input import TabularInput
 from dowel.utils import mkdir_p
 
